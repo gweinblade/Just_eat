@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/background_princ"
+    tools:context=".Activity_principale">
+
+    <TextView
+        android:id="@+id/textView2"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="78dp"
+        android:layout_marginTop="82dp"
+        android:layout_marginEnd="78dp"
+        android:textStyle="bold"
+        android:layout_marginBottom="19dp"
+        android:fontFamily="@font/sky"
+        android:text="@string/text8"
+        android:shadowColor="@color/black"
+        android:shadowDx="5"
+        android:shadowRadius="5"
+        android:textColor="@color/orange"
+        android:textSize="50sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView3"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textView3"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="119dp"
+        android:layout_marginTop="19dp"
+        android:layout_marginEnd="119dp"
+        android:layout_marginBottom="15dp"
+        android:text="Are you hungry !! "
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView4"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView2" />
+
+    <TextView
+        android:id="@+id/textView4"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="73dp"
+        android:layout_marginTop="9dp"
+        android:layout_marginEnd="73dp"
+        android:layout_marginBottom="17dp"
+        android:text="We have delicious food"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/textView5"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView3" />
+
+    <TextView
+        android:id="@+id/textView5"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginStart="90dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="90dp"
+        android:layout_marginBottom="321dp"
+        android:text="and fast delivery service"
+        android:textColor="@color/colorWhite"
+        android:textSize="22sp"
+        app:layout_constraintBottom_toTopOf="@+id/prinin"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textView4" />
+
+    <Button
+        android:id="@+id/prinin"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="10dp"
+        android:background="@drawable/custom_button2"
+        android:fontFamily="@font/baumans"
+        android:text="@string/text1"
+        android:textAllCaps="false"
+        android:textSize="33sp"
+        app:layout_constraintBottom_toTopOf="@+id/prinup"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+
+    <Button
+        android:id="@+id/prinup"
+        android:layout_width="293dp"
+        android:layout_height="54dp"
+        android:layout_marginStart="30dp"
+        android:layout_marginEnd="30dp"
+        android:layout_marginBottom="26dp"
+        android:background="@drawable/custom_button2"
+        android:fontFamily="@font/baumans"
+        android:text="@string/text7"
+        android:textAllCaps="false"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="parent"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent" />
+</androidx.constraintlayout.widget.ConstraintLayout>

@@ -1,0 +1,41 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:orientation="vertical"
+    android:gravity="center"
+    android:background="#fff"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".NewPassActivity">
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="50dp"
+        android:layout_marginLeft="10dp"
+        >
+
+        <EditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:inputType="textEmailAddress"
+            android:layout_marginTop="10dp"
+            android:hint="E-Mail"
+            android:id="@+id/uyeEmail" />
+        <Button
+            android:text="Submit New Password Link"
+            android:layout_width="300dp"
+            android:layout_height="50dp"
+            android:layout_marginBottom="100dp"
+            android:textColor="#FFFF"
+            android:layout_marginTop="15dp"
+            android:id="@+id/yeniParolaGonder"
+            android:layout_gravity="center"
+            android:background="@color/colorAccent"/>
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+
+
+</LinearLayout>

@@ -1,0 +1,276 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+
+    tools:context=".CartFragment"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:layout_marginBottom="82dp"
+    >
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/cartevide"
+        android:visibility="gone"
+        android:orientation="vertical"
+        >
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text="your  cart is empty "
+            android:gravity="center_horizontal"
+            android:textColor="@color/black"
+            android:fontFamily="@font/baumans"
+            android:layout_marginTop="80dp"
+
+            android:textSize="55dp"/>
+    <ImageView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center_vertical"
+        android:layout_marginLeft="80dp"
+android:layout_marginTop="60dp"
+        android:background="@drawable/cartvide3"/>
+    </LinearLayout>
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            android:visibility="visible"
+            android:id="@+id/cartepage">
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:src="@drawable/ic_restaurant_menu_black_24dp"
+                android:layout_gravity="center"
+                />
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="My Cart"
+                android:textStyle="bold"
+                android:layout_marginTop="10dp"
+                android:textSize="35dp"
+                android:fontFamily="@font/aclonica"
+                android:textColor="@color/black"
+                android:layout_gravity="center_horizontal"/>
+
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:id="@+id/cartrecycler"/>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="---------------------------------------------------------------------------------------------"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Total restaurent : "
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:id="@+id/totalprice"
+
+                    android:textSize="20dp"
+                    android:text="... DA "
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="---------------------------------------------------------------------------------------------"/>
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Livraison cost: "
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="250 DA "
+                    />
+
+            </LinearLayout>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="5dp"
+
+                android:weightSum="2">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.3"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="20dp"
+                    android:textColor="@color/black"
+                    android:text="Service cost:"
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.7"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="20dp"
+                    android:text="50 DA "
+                    />
+
+            </LinearLayout>
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="8dp"
+                android:layout_marginTop="10dp"
+                android:text="---------------------------------------------------------------------------------------------"/>
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:weightSum="2"
+                android:layout_marginLeft="80dp">
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="0.6"
+                    android:layout_height="wrap_content"
+                    android:layout_marginLeft="15dp"
+                    android:textSize="25dp"
+                    android:textColor="@color/black"
+                    android:text="Total : "
+                    />
+                <TextView
+                    android:layout_width="0dp"
+                    android:layout_weight="1.4"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:paddingLeft="50dp"
+                    android:id="@+id/totalpriceall"
+                    android:textSize="25dp"
+                    android:text="... DA "
+                    />
+
+            </LinearLayout>
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Delivery adresse"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+                android:fontFamily="@font/baumans"
+                android:textColor="@color/black"
+                />
+<LinearLayout
+    android:layout_width="match_parent"
+    android:layout_height="8dp"
+    android:layout_marginTop="5dp"
+    android:background="@color/grey"/>
+
+            <fragment
+                xmlns:android="http://schemas.android.com/apk/res/android"
+                xmlns:tools="http://schemas.android.com/tools"
+                android:layout_width="match_parent"
+                android:layout_height="250dp"
+                android:id="@+id/map2"
+                android:name="com.google.android.gms.maps.SupportMapFragment" />
+
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="8dp"
+                android:background="@color/grey"
+                />
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:text="Payment methode"
+                android:layout_marginTop="10dp"
+                android:textSize="20dp"
+                android:layout_marginLeft="15dp"
+
+                android:textColor="@color/black"/>
+
+            <CheckBox
+                android:layout_marginLeft="15dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="15dp"
+                android:checked="true"
+                android:clickable="false"
+                android:text="cash at the delivery"/>
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_marginTop="20dp">
+                <Button
+                    android:layout_marginTop="10dp"
+                    android:layout_width="230dp"
+                    android:layout_marginLeft="80dp"
+                    android:layout_marginRight="40dp"
+                    android:layout_height="56dp"
+                    android:background="@drawable/custom_button3"
+                    android:id="@+id/confirme"
+                    android:text="SEND ORDER"
+                    android:textSize="30dp"
+
+                    />
+
+
+                <ImageButton
+                    android:layout_marginTop="0dp"
+                    android:layout_width="50dp"
+
+                    android:layout_height="50dp"
+                    android:background="@drawable/custom_button3"
+                    android:src="@drawable/ic_delete_black_24dp"
+                    android:id="@+id/deletecart"
+                    android:layout_gravity="center_vertical"
+                    android:textSize="30dp"/>
+            </LinearLayout>
+
+
+        </LinearLayout>
+    </ScrollView>
+</LinearLayout>

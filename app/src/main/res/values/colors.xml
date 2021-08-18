@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#B9BBB9</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="cosignin">#373636</color>
+    <color name="textlog">#EEC23E</color>
+    <color name="buttonlog">#A81D1D</color>
+    <color name="orange">#DF3F21</color>
+    <color name="orange2">#F1FF4800</color>
+    <color name="black">#131212</color>
+    <color name="bleu">#123BB4</color>
+    <color name="darkc">#AA333639</color>
+    <color name="colorWhite">#ffffffff</color>
+    <color name="gradient_start_color">#4c84ff</color>
+    <color name="gradient_end_color">#18a3fe</color>
+    <color name="gr">#EDECECEC</color>
+    <color name="st2">#c6000000</color>
+    <color name="bla">#FAF9F5</color>
+    <color name="grey">#D3D3D3</color>
+    <color name="red">#E2093B</color>
+
+
+    <!-- colors for tab and screent text -->
+
+    <color name="tab_indicator_gray">#c0c0c0</color>
+    <color name="intro_title_color">#000000</color>
+    <color name="intro_description_color">#656565</color>
+
+</resources>

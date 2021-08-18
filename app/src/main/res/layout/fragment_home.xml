@@ -1,0 +1,102 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".home">
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginBottom="70dp">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical"
+            >
+
+            <androidx.viewpager.widget.ViewPager
+                android:id="@+id/viewe"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:layout_marginLeft="15dp"
+                android:layout_marginTop="20dp"
+                android:layout_marginRight="15dp"
+                app:cardCornerRadius="6dp"
+
+                ></androidx.viewpager.widget.ViewPager>
+            <com.google.android.material.tabs.TabLayout
+                android:id="@+id/tab_indicator2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+               android:layout_gravity="center_horizontal"
+                app:tabBackground="@drawable/indicator_selector"
+                app:tabIndicator="@color/colorWhite"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_restaurant_black_24dp"
+                android:paddingLeft="10dp"
+                android:text=" What's New !"
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/whatsnewrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"/>
+
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_local_dining_black_24dp"
+
+                android:paddingLeft="10dp"
+                android:text=" Restaurant of month "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/restoofthemonthrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+
+                android:layout_marginLeft="5dp"/>
+
+            <TextView
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:drawableLeft="@drawable/ic_star_ora_24dp"
+                android:paddingLeft="10dp"
+                android:text=" Top Ratting "
+                android:textColor="@color/black"
+                android:textSize="25sp" />
+
+            <androidx.recyclerview.widget.RecyclerView
+                android:id="@+id/topratingrecycler"
+                android:layout_width="match_parent"
+                android:layout_height="200dp"
+                android:orientation="horizontal"
+                android:layout_marginRight="10dp"
+                android:layout_marginLeft="5dp"/>
+
+
+        </LinearLayout>
+
+    </ScrollView>
+
+
+</LinearLayout>

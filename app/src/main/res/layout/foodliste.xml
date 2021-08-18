@@ -1,0 +1,89 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="200dp"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    app:cardCornerRadius="0dp"
+    android:elevation="10dp"
+    >
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:scaleType="centerCrop"
+            android:id="@+id/restoimage"/>
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:orientation="horizontal"
+            android:padding="10dp"
+            android:background="@color/darkc"
+            android:weightSum="10">
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="7.7"
+                android:gravity="center_vertical"
+                android:orientation="vertical">
+
+                <TextView
+                    android:id="@+id/restoname"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Name of restaurent"
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/aclonica"/>
+                <TextView
+
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text=""
+                    android:textSize="20dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/aclonica"/>
+
+
+            </LinearLayout>
+
+            <ImageButton
+                android:id="@+id/favbutton"
+                android:layout_marginTop="9dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:padding="7dp"
+                android:background="@drawable/custom_button"
+                android:src="@drawable/ic_favorite_border_black_24dp" />
+
+
+            <LinearLayout
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal"
+                android:layout_gravity="center_vertical"
+                android:padding="10dp"
+                android:layout_weight="2.2"
+                android:gravity="center_vertical"
+                android:weightSum="2">
+                <TextView
+                    android:id="@+id/restrating"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="3.2/5"
+                    android:textSize="18dp"
+                    android:textColor="@color/colorWhite"
+                    android:fontFamily="@font/aclonica"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </RelativeLayout>
+
+</androidx.cardview.widget.CardView>

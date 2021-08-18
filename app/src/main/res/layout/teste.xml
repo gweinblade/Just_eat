@@ -1,0 +1,115 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.cardview.widget.CardView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    android:layout_marginBottom="8dp"
+    android:clickable="true"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:elevation="10dp"
+    android:id="@+id/foodcard22">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="110dp"
+        android:orientation="horizontal"
+        android:weightSum="10"
+        >
+        <androidx.cardview.widget.CardView
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_marginBottom="7dp"
+            android:layout_marginTop="7dp"
+            android:layout_marginLeft="7dp"
+            android:layout_marginRight="7dp"
+            app:cardCornerRadius="25dp"
+            app:cardElevation="0dp"
+            android:layout_weight="3">
+
+            <ImageView
+                android:id="@+id/foodimage22"
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:scaleType="fitXY"
+                />
+        </androidx.cardview.widget.CardView>
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:padding="5dp"
+            android:layout_weight="5.4"
+            android:orientation="vertical"
+            android:weightSum="2">
+            <TextView
+                android:id="@+id/foodname22"
+                android:layout_width="match_parent"
+                android:text="name"
+                android:textSize="25dp"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:layout_weight="1.2"
+                />
+            <TextView
+                android:id="@+id/foodprice22"
+                android:layout_width="match_parent"
+                android:text="price"
+                android:textSize="25dp"
+                android:gravity="center_vertical"
+                android:layout_height="0dp"
+                android:layout_weight="0.8"
+                />
+
+        </LinearLayout>
+
+        <ImageButton
+            android:id="@+id/buybutt22"
+            android:layout_width="0dp"
+            android:layout_height="50dp"
+            android:layout_marginTop="30dp"
+            android:layout_marginStart="19dp"
+            android:layout_weight="1.3"
+            android:background="@drawable/custom_button2"
+            android:src="@drawable/ic_add_shopping_cart_black_24dp"
+            android:clickable="true" />
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:id="@+id/expandeddescription22"
+        android:visibility="gone"
+        android:layout_marginTop="130dp"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+        <LinearLayout
+            android:id="@+id/l1"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:padding="10dp"
+            android:layout_marginTop="10dp"
+            >
+            <ImageView
+                android:layout_width="33dp"
+                android:layout_height="33dp"
+                android:src="@drawable/ic_description_black_24dp"
+                />
+            <TextView
+                android:layout_gravity="center_vertical"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:paddingLeft="5dp"
+                android:text="Description :"
+                android:textSize="25sp"/>
+        </LinearLayout>
+        <TextView
+            android:layout_marginTop="7dp"
+            android:id="@+id/fooddescuption22"
+            android:paddingLeft="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            android:text="description "
+            android:fontFamily="@font/baumans"
+            android:textSize="25sp"/>
+
+    </LinearLayout>
+
+</androidx.cardview.widget.CardView>

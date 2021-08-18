@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Just Eat</string>
+    <string name="text1">Sign In</string>
+    <string name="text2">Username</string>
+    <string name="text3">Password</string>
+    <string name="text4">Login</string>
+    <!-- sign up -->
+    <string name="text5">Create Account</string>
+    <string name="text6">WELCOME</string>
+    <string name="text7">Sign Up</string>
+    <!-- principale -->
+    <string name="text8">Just Eat</string>
+    <string name="text9">WELCOME BACK</string>
+
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+    <string name="title_activity_maps">Map</string>
+</resources>

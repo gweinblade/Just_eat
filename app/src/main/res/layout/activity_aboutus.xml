@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".aboutus">
+    <RelativeLayout
+        android:id="@+id/r1"
+        android:layout_width="match_parent"
+        android:layout_height="410dp"
+        android:layout_centerHorizontal="true"
+        >
+        <RelativeLayout
+            android:id="@+id/b1"
+            android:layout_width="match_parent"
+            android:layout_height="350dp"
+            android:background="@drawable/screen_background"
+            android:layout_centerHorizontal="true"
+            >
+            <ImageView
+                android:id="@+id/aboutimage"
+                android:scaleType="centerCrop"
+                android:src="@drawable/resto"
+                android:layout_width="130dp"
+                android:layout_height="130dp"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="25dp"
+                android:layout_centerVertical="false"
+                />
+            <TextView
+                android:id="@+id/afficheName"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="JUST EAT "
+                android:fontFamily="@font/sky"
+                android:textAlignment="center"
+                android:textColorHint="@color/bla"
+                android:textSize="50dp"
+                android:layout_marginTop="23dp"
+                android:textColor="@color/bla"
+                android:layout_below="@id/aboutimage"
+                android:layout_centerHorizontal="true"
+                />
+
+        </RelativeLayout>
+
+
+
+    </RelativeLayout>
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center_horizontal"
+        android:id="@+id/relabout">
+        <androidx.cardview.widget.CardView
+            android:id="@+id/cardabout"
+            android:layout_width="350dp"
+            android:layout_height="400dp"
+            android:outlineSpotShadowColor="@color/black"
+            android:layout_marginTop="275dp"
+            android:layout_centerHorizontal="true"
+            >
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:layout_gravity="center_horizontal"
+                android:orientation="vertical">
+
+                <TextView
+
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="About Us"
+                    android:fontFamily="@font/aclonica"
+                    android:layout_marginTop="15dp"
+                    android:padding="15dp"
+                    android:textColor="@color/st2"
+                    android:textStyle="normal"
+                    android:textSize="40sp"
+
+
+                    />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="YAGOUB Reda"
+                    android:fontFamily="@font/baumans"
+                    android:layout_marginTop="30dp"
+                    android:padding="7dp"
+                    android:textColor="@color/st2"
+                    android:textStyle="normal"
+                    android:textSize="25sp"
+                    />
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="MOKRANI Mehdi"
+                    android:fontFamily="@font/baumans"
+                    android:layout_marginTop="10dp"
+                    android:padding="15dp"
+                    android:textColor="@color/st2"
+                    android:textStyle="normal"
+                    android:textSize="25sp"
+                    />
+
+                <TextView
+                    android:layout_gravity="center_horizontal"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:text="JUST EAT 1.0"
+                    android:fontFamily="@font/audiowide"
+                    android:layout_marginTop="17dp"
+                    android:padding="15dp"
+                    android:textColor="@color/st2"
+                    android:textStyle="normal"
+                    android:textSize="25sp"
+                    />
+
+
+            </LinearLayout>
+
+
+        </androidx.cardview.widget.CardView>
+    </RelativeLayout>
+    <ImageButton
+        android:layout_alignBottom="@+id/relabout"
+        android:layout_width="63dp"
+        android:layout_height="63dp"
+        android:layout_marginBottom="110dp"
+        android:layout_centerHorizontal="true"
+        android:id="@+id/prevv"
+        android:src="@drawable/ic_arrow_back_black_24dp"
+        android:background="@drawable/button_background"/>
+
+</RelativeLayout>

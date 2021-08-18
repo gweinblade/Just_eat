@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<androidx.coordinatorlayout.widget.CoordinatorLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".home">
+
+    <FrameLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:id="@+id/fram1"/>
+
+
+    <com.google.android.material.bottomappbar.BottomAppBar
+        style="@style/Widget.MaterialComponents.BottomAppBar"
+
+        android:id="@+id/bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_gravity="bottom"
+        android:background="#00EB4F4F"
+        android:backgroundTint="@color/colorPrimary"
+        app:fabAlignmentMode="center"
+
+        app:fabCradleRoundedCornerRadius="20dp"
+        app:hideOnScroll="true" />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bhome"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        android:src="@drawable/ic_home_black_24dp"
+        app:backgroundTint="@color/orange2"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bplace"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        app:layout_anchorGravity="left"
+        android:src="@drawable/ic_fav2_black_24dp"
+        android:layout_marginLeft="70dp"
+        app:backgroundTint="@color/orange2"
+        app:fabSize="mini"
+        app:useCompatPadding="true"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bcategorie"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        app:layout_anchorGravity="left"
+        android:src="@drawable/ic_dashboard_black_24dp"
+        app:backgroundTint="@color/orange2"
+        app:useCompatPadding="true"
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bcart"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        app:layout_anchorGravity="right"
+        android:src="@drawable/ic_shopping_cart_black_24dp"
+        android:layout_marginRight="70dp"
+        app:backgroundTint="@color/orange2"
+        app:fabSize="mini"
+        app:useCompatPadding="true"
+        />
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/bprofil"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        app:layout_anchor="@id/bar"
+        app:layout_anchorGravity="right"
+        android:src="@drawable/ic_account_circle_black_24dp"
+        app:backgroundTint="@color/orange2"
+        app:useCompatPadding="true"
+        />
+
+
+</androidx.coordinatorlayout.widget.CoordinatorLayout>
